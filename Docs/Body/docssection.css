@@ -1,0 +1,28 @@
+.container-docs{
+    text-align: center;
+    max-width: 1440px;
+    text-align: left;
+    border-radius: 0px;
+    width: 1440px;
+    height: 264px;
+    background: linear-gradient(268.4deg, #62B4FF 0.19%, #0080F6 97.81%);
+
+}
+.container-docs:after{
+    position: absolute;
+    content: '';
+    width: 1440px;
+    height: 40px;
+    background-color: black;
+    transform: skewY(-1deg);
+    margin-top: .6em;
+    background: linear-gradient(268.4deg, #62B4FF 0.19%, #0080F6 97.81%);
+    z-index: -1;
+}
+.section-title{
+    margin-top: 3em;
+}
+.d-grid1{
+    grid-template-columns: repeat(1, minmax(min(100px, 100%), 1fr));
+    display: grid;
+}
