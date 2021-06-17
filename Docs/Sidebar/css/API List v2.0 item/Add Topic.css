@@ -12,6 +12,8 @@
     display: grid;
     width: 1440px;
 }
+
+
 .col-left{
     background: #FFFFFF;
     border-radius: 20px;
@@ -41,7 +43,8 @@
 .col-left ul li ul li{ 
     margin-top: 24px;
 }
-.col-left ul li ul li a{  
+
+.col-left ul li ul li a{ 
     height: 19px;
     width: 162px;
     font-family: Avenir;
@@ -52,7 +55,26 @@
     text-decoration: none;
     color: #333333; 
     list-style: none;
+    
 }
+.Topics ul li{
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.Topics ul li a{ 
+    height: 19px;
+    width: 162px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #333333; 
+    list-style: none;
+    margin-left: 3em;
+}
+
 .col-left ul li a:hover,
 .col-left ul li a.active a{
     color:deepskyblue;
@@ -61,10 +83,12 @@
 
 
 .col-right{
-    height: 535px;
+    height: 531px;
     width: 742px;
     border-radius: 20px;
     margin-top: 100px;
+    z-index: 99;
+    
 }
 .col-right ul h1{
     height: 40px;
@@ -77,23 +101,8 @@
     color: black;
     list-style: none;
 }
-.col-right ul li{
+.col-right ul p{
     text-decoration: none;
-    margin-top: 25px;
-     /*list-style: none;*/
-}
-.col-right ul li a{  
-    height: 19px;
-    width: 162px;
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    color: #333333; 
-    /*text-decoration: none;*/
-}
-.col-right ul li a:hover,
-.col-right ul li a.active a{
-    color:deepskyblue;
+    text-align: justify;
+    line-height: 33px;
 }
