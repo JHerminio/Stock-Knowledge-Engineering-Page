@@ -61,6 +61,11 @@
   border-left: 4px solid transparent;
 }
 
+.col-left ul li ul li a:hover {
+  color: #0080f6;
+  border-left-color: #0080f6;
+}
+
 .col-left ul ul ul {
   display: -webkit- flex;
   display: -moz- flex;
@@ -111,14 +116,12 @@
   height: 40px;
   font-family: Avenir;
   font-style: normal;
-  font-weight: 100;
   font-size: 24px;
   text-decoration: none;
   line-height: 33px;
   color: black;
   list-style: none;
   margin-left: 20px;
-  display: contents;
 }
 
 .col-right li h2 {
@@ -158,6 +161,19 @@
   text-decoration: none;
   line-height: 33px;
   color: #0080f6;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.col-right h4 {
+  height: 40px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 33px;
+  color: black;
   list-style: none;
   margin-left: 20px;
 }
@@ -224,7 +240,7 @@
   background: rgb(41, 45, 62);
   box-sizing: border-box;
   overflow-y: scroll;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .col-right1 p {
@@ -235,7 +251,58 @@
   font-size: 16px;
   text-decoration: none;
   line-height: 33px;
-  color: #ffff;
+  color: #bfc7d5;
   list-style: none;
-  margin-left: 100px;
+  margin-left: 10px;
+}
+
+.col-right2 {
+  height: 45px;
+  width: 85%;
+  background: #ffffff;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  margin-left: 20px;
+}
+
+.col-right2 p {
+  height: 20px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  color: grey;
+  margin-left: 10px;
+  border-left: 4px solid;
+}
+
+.col-right3 {
+  height: 350px;
+  width: 85%;
+  background: rgb(41, 45, 62);
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+.col-right3 p {
+  height: 20px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 33px;
+  color: #bfc7d5;
+  margin-left: 80px;
+}
+
+.col-right3 h5 {
+  height: 20px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 33px;
+  color: #bfc7d5;
+  margin-left: 20px;
 }

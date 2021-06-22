@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./../Body/docsbody.css">
     <link rel="stylesheet" href="./../Body/docssearchbox.css">
     <link rel="stylesheet" href="./../Body/docssection.css">
-
-
 </head>
 <header>
     <div class="container-topnav">
@@ -196,38 +194,70 @@
             </div>
 
             <div class="col-right">
-                    <h1>How Ar Works</h1>
-                    <li>
-                        <h2>Step 1</h2>
-                    </li>
-                    <img src="./../../images/0.png">
+                <h1>Add Topic</h1><br>
+                <h2>Description</h2>
+                <p>Add Topic</p><br>
+                <h2>Request</h2>
+                <h4>Method</h4>
+            
+                <div class="col-right1">
+                    <p>POST</p>
+                        </div>
+                
+               <br><h4>Endpoint</h4>
+            
+               <div class="col-right2">
+                <p>/topics</p>
+                    </div>
+                
+               <h4>Header</h4>
+               <div class="col-right2">
+                <p>Content-Type:application/json</p>
+                    </div>
 
-                    <li>
-                        <h2>Step 2</h2>
-                    </li>
-                    <img src="./../../images/1.png">
+               <h4>Body</h4>
+               <div class="col-right2">
+                <p>filter by title title={title} filter by subject subject={subject}</p>
+                   </div>
+            
+                <br><h2>Condition</h2>
+                <p>Query results must not be null or greater than 0</p> <br><br>
 
-                    <li>
-                        <h2>Step 3</h2>
-                    </li>
-                    <img src="./../../images/2.png">
+                <h2>Response</h2>
+                <h4>Success</h4>
 
-                    <li>
-                        <h2>Step 4</h2>
-                    </li>
-                    <img src="./../../images/3.png">
+                <div class="col-right3">
+                    <h5>{</h5>
+                        <h5>sucess: true,</h5>
+                        <h5>content: [</h5>
+                        <p>{</p>
+                        <p>id: int,</p>
+                        <p>title: string,</p>
+                        <p>description: string,</p>
+                        <p>icon:string,</p>
+                        <p>color: string,</p>
+                        <p>subject: string,</p>
+                        <p>mode: string,</p>
+                        <p>type: string,</p>
+                        <p>createdtime: datetime,</p>
+                        <p>modifiedtime: datetime</p>
+                        <p>{</p>
+                        <h5>]</h5>
+                        <h5>}</h5>
+                       </div>
 
-                    <li>
-                        <h2>Step 5</h2>
-                    </li>
-                    <img src="./../../images/4.png">
+                <br> <h4>Fail</h4>
 
-                    <li>
-                        <h2>Step 6</h2>
-                    </li>
-                    <img src="./../../images/5.png">
+                <div class="col-right1">
+                    <p>{sucess: false}</p>
+                        </div>
+
+
+            
+    
+
                     
-
+                
             </div>         
         </div>
     </div> 
