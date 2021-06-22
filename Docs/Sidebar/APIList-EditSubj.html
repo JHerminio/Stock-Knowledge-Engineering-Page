@@ -194,62 +194,85 @@
             </div>
 
             <div class="col-right">
-                <h1>Topics</h1><br>
+                <h1>Edit Subject</h1><br>
                 <h2>Description</h2>
-                <p>Return list of topic</p><br>
+                <p>Edit subject</p><br>
                 <h2>Request</h2>
                 <h4>Method</h4>
             
                 <div class="col-right1">
-                    <p>GET</p>
+                    <p>POST</p>
                         </div>
                 
                <br><h4>Endpoint</h4>
             
                <div class="col-right2">
-                <p>/topics</p>
+                <p>/topics/edit</p>
                     </div>
                 
                <h4>Header</h4>
                <div class="col-right2">
-                <p>Content-Type:application/json</p>
+                <p>Content-Type: multipart/form-data</p>
                     </div>
 
-               <h4>Body</h4>
-               <div class="col-right2">
-                <p>filter by title title={title} filter by subject subject={subject}</p>
-                   </div>
+               <h4>Body</h4><br>
+
+               <h4>Form data</h4>
+
+               <table>
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                    <th>Nullable</th>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>int</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>string</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>string</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td>string</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>icon</td>
+                    <td>file</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>userid</td>
+                    <td>int</td>
+                    <td>NO</td>
+                </tr>
+            </table>
+             
             
                 <br><h2>Condition</h2>
-                <p>Query results must not be null or greater than 0</p> <br><br>
+                <div class="col-right1">
+                    <p>N/A</p>
+                        </div>
 
                 <h2>Response</h2>
                 <h4>Success</h4>
-
-                <div class="col-right3">
-                    <h5>{</h5>
-                        <h5>sucess: true,</h5>
-                        <h5>content: [</h5>
-                        <p>{</p>
-                        <p>id: int,</p>
-                        <p>title: string,</p>
-                        <p>description: string,</p>
-                        <p>icon:string,</p>
-                        <p>color: string,</p>
-                        <p>subject: string,</p>
-                        <p>mode: string,</p>
-                        <p>type: string,</p>
-                        <p>createdtime: datetime,</p>
-                        <p>modifiedtime: datetime</p>
-                        <p>{</p>
-                        <h5>]</h5>
-                        <h5>}</h5>
-                       </div>
+                <div class="col-right1">
+                    <p>TRUE</p>
+                        </div>
 
                 <br> <h4>Fail</h4>
 
                 <div class="col-right1">
-                    <p>{sucess: false}</p>
+                    <p>N/A</p>
                         </div>
 
 
