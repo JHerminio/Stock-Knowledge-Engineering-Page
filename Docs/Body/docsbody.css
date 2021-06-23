@@ -13,143 +13,42 @@
   width: 1440px;
 }
 .col-left {
+  height: 535px;
+  width: 350px;  
   background: #ffffff;
   border-radius: 20px;
-  height: 531px;
-  width: 350px;
   margin-top: 100px;
-  margin-left: 162px;
   border: 1px solid #f2f2f2;
   box-sizing: border-box;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   overflow-y: auto;
-}
-.col-left ul li {
-  text-decoration: none;
-  list-style: none;
-}
-.col-left ul li h1 a {
-  height: 33px;
-  width: 56px;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  text-decoration: none;
-  line-height: 33px;
-  color: #0080f6;
-  margin-bottom: 1px;
-  margin-left: 60px;
-}
-.col-left ul li ul li {
-  margin-top: 24px;
-}
-.col-left ul li ul li a {
-  height: 19px;
-  width: 162px;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  text-decoration: none;
-  color: #333333;
-  list-style: none;
-  margin-left: 20px;
-  padding-left: 40px;
-  border-left: 4px solid transparent;
-}
-.col-left ul li a:hover,
-.col-left ul li a.active a {
-  color: deepskyblue;
-  border-left-color: #0080f6;
-}
-
-.col-left ul ul ul {
-  float: left;
-  /* display: none; */
-}
-
-.col-left ul li ul li ul {
-  float: left;
-  list-style: none;
-}
-
-.col-left ul li ul li ul li {
-  margin-top: 24px;
-}
-
-.col-left ul li ul li ul li a {
-  height: 19px;
-  width: 162px;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  text-decoration: none;
-  color: #333333;
-  list-style: none;
-  margin-left: 20px;
-  padding-left: 40px;
-  border-left: 4px solid transparent;
-}
-
-.col-left ul ul ul ul {
-  float: left;
-  /* display: none; */
-}
-
-.col-left ul li ul li ul li ul {
-  float: left;
-  list-style: none;
-}
-
-.col-left ul li ul li ul li ul li {
-  margin-top: 24px;
-}
-
-.col-left ul li ul li ul li ul li a {
-  height: 19px;
-  width: 162px;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  text-decoration: none;
-  color: #333333;
-  list-style: none;
-  margin-left: 20px;
-  padding-left: 40px;
-  border-left: 4px solid transparent;
+  margin-left: 162px;
 }
 
 .col-right {
   height: 535px;
   width: 842px;
+  background: #ffffff;
   border-radius: 20px;
   margin-top: 100px;
-  background: #ffffff;
   border: 1px solid #f2f2f2;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
-  overflow-y: scroll;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
 }
 
 .col-right h1 {
   height: 40px;
   font-family: Avenir;
   font-style: normal;
-  font-weight: 100;
   font-size: 24px;
   text-decoration: none;
   line-height: 33px;
   color: #0080f6;
   list-style: none;
   margin-left: 20px;
+  margin-top: 1em;
 }
-
 .col-right p {
   height: 20px;
   font-family: Avenir;
@@ -162,7 +61,6 @@
   list-style: none;
   margin-left: 20px;
 }
-
 .col-right h2 {
   height: 40px;
   font-family: Avenir;
@@ -176,7 +74,6 @@
   margin-left: 20px;
   display: contents;
 }
-
 .col-right li h2 {
   height: 40px;
   font-family: Avenir;
@@ -190,7 +87,6 @@
   margin-left: 20px;
   display: contents;
 }
-
 .col-right h2 a {
   height: 40px;
   font-family: Avenir;
@@ -204,7 +100,6 @@
   margin-left: 20px;
   display: contents;
 }
-
 .col-right h3 {
   height: 40px;
   font-family: Avenir;
@@ -217,7 +112,6 @@
   list-style: none;
   margin-left: 20px;
 }
-
 .col-right ul h1 {
   height: 40px;
   font-family: Avenir;
@@ -230,7 +124,6 @@
   list-style: none;
   margin-left: 20px;
 }
-
 .col-right ul h {
   height: 40px;
   font-family: Avenir;
@@ -243,13 +136,11 @@
   list-style: none;
   margin-left: 20px;
 }
-
 .col-right ul li {
   text-decoration: none;
   margin-top: 25px;
   margin-left: 20px;
   list-style: inside;
-  /*list-style: none;*/
 }
 .col-right ul li a {
   height: 19px;
@@ -267,13 +158,11 @@
 .col-right ul li a.active a {
   color: deepskyblue;
 }
-
 .col-right img {
   width: 100%;
   height: auto;
   margin-left: 10px;
 }
-
 .col-right1 {
   height: 45px;
   width: 85%;
@@ -282,7 +171,6 @@
   overflow-y: scroll;
   margin-left: 10px;
 }
-
 .col-right1 p {
   height: 20px;
   font-family: Avenir;

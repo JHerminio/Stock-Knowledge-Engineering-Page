@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <link rel="stylesheet" href="./../Header/docstopnav.css">
-    <link rel="stylesheet" href="/Home/Footer/sectionfooter.css">
+    <link rel="stylesheet" href="./../Footer/sectionfooter.css">
     <link rel="stylesheet" href="./../Body/docsbody.css">
     <link rel="stylesheet" href="./../Body/docssearchbox.css">
     <link rel="stylesheet" href="./../Body/docssection.css">
@@ -190,21 +190,4 @@
         </div>
     </div>
 </section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    $('.burger').on('click', function (event) {
-        $('.navigation-bar').slideToggle('200');
-    })
-    $(document).ready(function () {
-        $(window).bind('scroll', function () {
-            var navHeight = $('header').height();
-            if ($(window).scrollTop() > navHeight) {
-                $('header').addClass('fixed');
-            }
-            else {
-                $('header').removeClass('fixed');
-            }
-        })
-    })
-</script>
+</html>

@@ -20,7 +20,7 @@
             <div class="navigation-bar">
                 <ul>
                     <li><a href="Home.html" class="active">Home</a></li>
-                    <li><a href="Docs.html">Docs</a></li>
+                    <li><a href="./Docs/Docs.html">Docs</a></li>
                     <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul>
                             <li><a href="#" class="active">API List v2.0</a></li>
@@ -48,7 +48,7 @@
                 <img src="images/main-hero.svg" alt="">
                 <h1>Stock Knowledge</h1>
                 <h3>Play to learn, learn to play!</h3>
-                <a href="Docs.html">EXPLORE DOCS</a>
+                <a href="./Docs/Docs.html">EXPLORE DOCS</a>
             </div>
             <div class="col-left1">
                 <img src="images/sk-1.svg" alt="">
@@ -184,21 +184,4 @@
     </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    $('.burger').on('click', function (event) {
-        $('.navigation-bar').slideToggle('200');
-    })
-    $(document).ready(function () {
-        $(window).bind('scroll', function () {
-            var navHeight = $('header').height();
-            if ($(window).scrollTop() > navHeight) {
-                $('header').addClass('fixed');
-            }
-            else {
-                $('header').removeClass('fixed');
-            }
-        })
-    })
-</script>
 </html>
