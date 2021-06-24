@@ -1,6 +1,6 @@
 # Website
 
-This website is built using [Visual Studio](https://code.visualstudio.com/), a modern static website generator.
+This website is built using [Visual Studio Code](https://code.visualstudio.com/), a modern static website generator.
 
 ## Installation
 
