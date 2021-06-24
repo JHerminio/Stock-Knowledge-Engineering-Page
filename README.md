@@ -1,1 +1,33 @@
-# Stock-Knowledge-Engineering-page-update
+# Website
+
+This website is built using [Visual Studio](https://code.visualstudio.com/), a modern static website generator.
+
+## Installation
+
+```console
+visual studio code install
+```
+
+## Local Development
+
+```console
+visual studio start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```console
+
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
