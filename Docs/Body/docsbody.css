@@ -24,53 +24,6 @@
   overflow-y: auto;
   margin-left: 162px;
 }
-.col-left ul li {
-  text-decoration: none;
-  list-style: none;
-}
-.col-left ul li h1 a {
-  height: 33px;
-  width: 56px;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  text-decoration: none;
-  line-height: 33px;
-  color: #0080f6;
-  margin-bottom: 1px;
-  margin-left: 60px;
-}
-.col-left ul li ul li {
-  margin-top: 24px;
-}
-.col-left ul li ul li a {
-  height: 19px;
-  width: 162px;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  text-decoration: none;
-  color: #333333;
-  list-style: none;
-  margin-left: 20px;
-  padding-left: 40px;
-  border-left: 4px solid transparent;
-}
-
-.col-left ul li ul li a:hover {
-  color: #0080f6;
-  border-left-color: #0080f6;
-}
-.col-left ul ul ul {
-  display: -webkit- flex;
-  display: -moz- flex;
-  display: -ms- flex;
-  display: -o- flex;
-  text-align: left;
-}
 .col-right {
   height: 535px;
   width: 842px;

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: Avenir;
+  font-style: normal;
+}
+.sidebar{
+  position: static;
+  width: 270px;
+  background: white;
+  transition: left 0.4s ease;
+}
+.sidebar h1{
+  padding-bottom: 1em;
+  margin-top: 1em;
+  list-style: none;
+  text-decoration: none;
+}
+.sidebar h1 a{
+  height: 40px;
+  font-family: Avenir;
+  font-style: normal;
+  font-size: 24px; 
+  text-decoration: none;
+  line-height: 33px;
+  color: #0080f6;
+  list-style: none;
+  text-align: left;
+  margin-left: 15px;
+}
+nav ul{
+  background: white;
+  list-style: none;
+  padding-left: 2em;
+}
+
+nav ul a{
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #333333;
+  border-left: 2px solid transparent;
+}
+nav ul li{
+  padding-bottom: .5em;
+}
+nav ul li a{
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #333333;
+  border-left: 2px solid transparent;
+  padding-left: 2em;
+  margin-bottom: .5em;
+}
+nav ul a:hover{
+  color:deepskyblue;
+  background: white;
+}
+nav ul ul{
+  position: static;
+  display: none;
+}
+nav ul ul li{
+  border-top: none;
+}
+nav ul ul li a{  
+  color: #333333;
+  padding-left: 4em;
+}
+nav ul ul li a:hover{
+  color:deepskyblue!important;
+  background: white!important;
+}
+nav ul a span{
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: transform 0.4s;
+  font-size: 14px;
+}
+nav ul a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
