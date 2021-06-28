@@ -6,13 +6,13 @@ This website is built using [Visual Studio Code](https://code.visualstudio.com/)
 
 ```console
 visual studio code install
-```
+``` 
 
 ### Local Development
 
 ```console
 visual studio start
-```
+``` 
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
