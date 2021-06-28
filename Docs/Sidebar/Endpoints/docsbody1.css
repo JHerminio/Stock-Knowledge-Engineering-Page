@@ -64,6 +64,8 @@
 .col-left ul li ul li a:hover {
   color: #0080f6;
   border-left-color: #0080f6;
+  color:deepskyblue!important;
+  background: white!important;
 }
 
 .col-left ul ul ul {

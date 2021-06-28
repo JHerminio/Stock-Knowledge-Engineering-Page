@@ -54,6 +54,7 @@ nav ul li a{
 nav ul li a:hover{
   color:deepskyblue;
   background: white;
+
 }
 nav ul ul{
   position: static;
@@ -110,5 +111,10 @@ nav ul .XR-A-I-G.show{
   display: block;
 }
 nav ul .XR-A-U-M.show{
+  display: block;
+}
+
+/*Endpoint*/
+nav ul .EP1.show{
   display: block;
 }
