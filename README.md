@@ -4,7 +4,7 @@ This website is built using [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Local Website
 
-[https://jherminio.github.io/Stock-Knowledge-Engineering-page-update/Home.html]
+
 
 ### Installation
 
