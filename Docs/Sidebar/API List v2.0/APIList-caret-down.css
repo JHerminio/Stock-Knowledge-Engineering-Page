@@ -48,7 +48,7 @@ nav ul a{
   border-left: 2px solid transparent;
 }
 nav ul li{
-  padding-bottom: .5em;
+  padding-bottom: 1em;
 }
 nav ul li a{
   font-family: Avenir;
@@ -61,7 +61,6 @@ nav ul li a{
   color: #333333;
   border-left: 2px solid transparent;
   padding-left: 2em;
-  margin-bottom: .5em;
 }
 nav ul a:hover{
   color:deepskyblue;

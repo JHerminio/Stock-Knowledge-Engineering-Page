@@ -50,7 +50,13 @@ nav ul a{
 nav ul li{
   padding-bottom: .5em;
 }
-nav ul li a{
+.caretdown{
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.caret-list li a{
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
@@ -60,8 +66,8 @@ nav ul li a{
   position: relative;
   color: #333333;
   border-left: 2px solid transparent;
-  padding-left: 2em;
   margin-bottom: .5em;
+  padding-left: 3em;
 }
 nav ul a:hover{
   color:deepskyblue;
