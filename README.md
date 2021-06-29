@@ -1,31 +1,32 @@
 ## Website
+This website is built using [Visual Studio Code](https://code.visualstudio.com/),
+is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
-This website is built using [Visual Studio Code](https://code.visualstudio.com/), is a code editor redefined and optimized for building and debugging modern web and cloud applications.
+## Local Website
+```console
+Soon for live documentation.
+```
 
-### Installation
-
+## Installation
 ```console
 visual studio code install
-```
+``` 
 
-### Local Development
-
+## Local Development
 ```console
 visual studio start
-```
-
+``` 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
-
+## Build
 ```console
+yarn build
 
 ``` 
 
 -->statement for hosting website
 
-### Deployment
-
+## Deployment
 ```console
 GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
