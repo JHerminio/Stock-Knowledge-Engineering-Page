@@ -1,7 +1,6 @@
 ## Local Website
-```console
-Soon for live documentation.
-```
+[Stock-Knowledge](https://jherminio.github.io/Stock-Knowledge-Engineering-page-update/Home.html)
+
 
 ## Website
 This website is built using [Visual Studio Code](https://code.visualstudio.com/),
