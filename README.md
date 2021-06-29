@@ -6,7 +6,7 @@ is a code editor redefined and optimized for building and debugging modern web a
 ## Local Website
 ```console
 Soon for live documentation.
----
+```
 
 ### Installation
 ```console
