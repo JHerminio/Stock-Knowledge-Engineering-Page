@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="/Docs/Body/docssearchbox.css">
     <link rel="stylesheet" href="/Docs/Body/docssection.css">
     <link rel="stylesheet" href="/Docs/Footer/sectionfooter.css">
-    <link rel="stylesheet" href="./../caret-down.css">
+    <link rel="stylesheet" href="./XR App Installation Guide.css">
+
 </head>
 <header>
     <div class="container-topnav">
@@ -73,12 +74,9 @@
                                 <span class="fa fa-caret-down 11"></span>
                             </a>
                             <li>
-                                <li><a href="/Docs/Sidebar/Endpoints/End-Add.html"></a>Add Student</li>
-                                <li><a href="/Docs/Sidebar/Endpoints/End-Edit.html"></a>Edit Student</li>
-                                <li><a href="/Docs/Sidebar/Endpoints/End-Get.html"></a>Get Student</li>
-                                <li><a href="/Docs/Sidebar/Endpoints/End-Gets.html"></a>Get Students</li>
-                                <li><a href="/Docs/Sidebar/Endpoints/End-Lead.html"></a>Leader Board</li>
-
+                            <li><a href="./HowUnity.html">How to Install Unity</a></li>
+                            <li><a href="./EnablingVR.html">Enabling VR 2019.31</a></li>
+                            <li><a href="./HowVuforia.html">How to Install Vuforia in your Unity files</a></li>
                             </li>
                         </ul>
                     </nav>
@@ -86,68 +84,61 @@
             </div>
 
             <div class="col-right">
-                <h1>Add Point</h1><br>
-                <h2>Description</h2>
-                <p>Add point to student record.</p><br>
-                <h2>Method</h2>
-            
-                <div class="col-right1">
-                    <p>POST</p>
-                        </div>
-                
-               <br><h2>Endpoint</h2>
-            
-               <div class="col-right2">
-                <p>/admin/api.php?f=addPoints</p>
-                    </div>
-                
-               <h2>Header</h2>
-               <div class="col-right2">
-                <p>Content-Type: application/x-www-form-urlencoded</p>
-                    </div>
+                    <h1>How to Install Vuforia in your Unity file</h1>
+                    <p> 1. Launch the Package Manager and search Vuforia then click Install.</p> <br><br>
+                    <img src="/images1/30.png" alt="30.png" style="width:650px"><br><br>
 
-               <h2>Body</h2><br>
-               <div class="col-right2">
-                <p>student_id={student id}&points={points}</p>
-                    </div>
+                    <li>The Vuforia Engine will be visible in the GameObject Menu.</li><br><br>
+                    <img src="/images1/31.png" alt="31.png" style="width:650px"><br><br>
 
-                <h2>Response</h2>
-                <h4>Success</h4>
-                <div class="col-right4">
-                    <p>{</p>
-                    <h5>result:"success"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String</h5>
-                    <p>{</p>
-                        </div>
+                    <p>If this menu is not shown, this means that you did not install Vuforia with Unity (Unity versions before 2019.2) or did not add the Vuforia Engine package to your project (Unity 2019.2 and later).</p><br><br>
+                    <br><br><p>Start by adding an ARCamera. This is a Unity camera game object that includes the VuforiaBehaviour to add support for augmented reality apps for both handheld devices and digital eyewear.</p><br><br>
+                    <br><img src="/images1/32.png" alt="32.png" style="width:450px"><br><br>
 
-                <br> <h4>Fail</h4>
-                <div class="col-right4">
-                    <p>{</p>
-                    <h5>result:"fail"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String</h5>
-                    <p>{</p>
-                        </div>
+                    <p>Add an ARCamera GameObject from the Vuforia Engine menu.</p><br><br>
+                    <img src="/images1/33.png" alt="33.png" style="width:450px"><br><br>
 
-                    <br><br><h2>Example</h2><br>
+                    <p>Select the ARCamera and Open Vuforia Configuration from the Inspector</p><br><br>
+                    <img src="/images1/34.png" alt="34.png" style="width:300px"><br><br>
 
-                    <h4>Javascript</h4>
-                    <h4>POST Request</h4>
+                    <p>Add a Vuforia Development License Key in the App License Key field. For a guide on getting a license key, see Vuforia License Manager</p><br><br>
+                    <img src="/images1/35.png" alt="35.png" style="width:300px"><br><br>
+                    <img src="/images1/36.png" alt="36.png" style="width:600px"><br>
+                    <img src="/images1/37.png" alt="37.png" style="width:650px"><br><br><br>
 
-                    <div class="col-right3">
-                        <h5>const addPoint = async () => {</h5>
-                            <h6>const response = await fetch('http://stockknowledge.org/admin/api.php?f=addPoint',{</h6>
-                            <p>method: 'POST',</p>
-                            <p> body: 'student_id=4&points=10',</p>
-                            <p> headers: {</p>
-                            <h7> 'Content-Type': 'application/x-www-form-urlencoded'</h7>
-                            <p>}</p>
-                            <h6> });</h6>
-                            <h6> return await response.json();</h6>
-                            <h5>}</h5>
-                           </div>
-            
-    
+                    <p>Note: Delete the default Main Camera after adding an ARCamera. The ARCamera contains its own Camera component. The Main Camera is not needed unless you are using it to render a specific camera overlay, e.g. user interface.</p><br><br>
+                    <br><br><img src="/images1/38.png" alt="38.png" style="width:350px"><br>
+                    <img src="/images1/39.png" alt="39.png" style="width:550px"><br>
+
+                    <br><h1>Vuforia: How to add Image Tracking Feature.</h1>
+
+                    <p>After activating Vuforia Engine in Unity, you can add features from the Vuforia Engine menu to your project from the Unity GameObject Menu.</p><br><br>
+                    <br> <img src="/images1/41.png" alt="41.png" style="width:500px"><br>
+
+                    <p>Navigate to the Vuforia Engine Menu and select Image Target. or any of the other targets you wish to use. (VuMark, Ground Plane, and Mid Air are also trackable targets). For configurations for using other targets, please consult the Features Overview linked just above. It presents Unity guides for each Vuforia target.</p><br><br><br>
+                    <br><br> <img src="/images1/51.png" alt="51.png" style="width:400px"><br>
+
+                    <p>Each Vuforia Engine GameObject can be configured in the Inspector. When a target is added, it will appear in the Hierarchy.</p><br>
+                    <img src="/images1/52.png" alt="52.png" style="width:250px"><br><br>
+
+                    <p>Select the Image Target GameObject from the Hierarchy and choose from the Type dropdown either</p><br>
+                    <img src="/images1/53.png" alt="53.png" style="width:350px"><br><br>
+
+                    <p>From database – Image Target databases can be made in the Vuforia Target Manager. Targets to the project. Vuforia will therefore ask you if you wish to Import Default Image Target Database in a pop-up window.</p><br><br>
+                    <br><br> <img src="/images1/54.png" alt="54.png" style="width:750px"><br>
+
+                    <br><img src="/images1/55.png" alt="55.png" style="width:750px"><br><br>
+
+                    <p>Press Import</p><br>
+
+                    <br><img src="/images1/56.png" alt="55.png" style="width:550px"><br><br>
+
+                    <br><img src="/images1/57.png" alt="55.png" style="width:450px"><br><br>
+
+                    <p>Note: Maintain an accurate scale between the Vuforia targets and physical prints or objects. Using targets that deviate in size from the real-life object you wish to track might impact the quality.</p>
+
 
                     
-                
             </div>         
         </div>
     </div> 
@@ -183,21 +174,4 @@
         </div>
     </div>
 </section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    $('.burger').on('click', function (event) {
-        $('.navigation-bar').slideToggle('200');
-    })
-    $(document).ready(function () {
-        $(window).bind('scroll', function () {
-            var navHeight = $('header').height();
-            if ($(window).scrollTop() > navHeight) {
-                $('header').addClass('fixed');
-            }
-            else {
-                $('header').removeClass('fixed');
-            }
-        })
-    })
-</script>
+</html>
