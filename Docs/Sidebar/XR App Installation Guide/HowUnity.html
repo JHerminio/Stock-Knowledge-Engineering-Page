@@ -6,16 +6,18 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-    <link rel="stylesheet" href="./../Header/docstopnav.css">
-    <link rel="stylesheet" href="./../Footer/sectionfooter.css">
-    <link rel="stylesheet" href="./../Body/docsbody.css">
-    <link rel="stylesheet" href="./../Body/docssearchbox.css">
-    <link rel="stylesheet" href="./../Body/docssection.css">
+    <link rel="stylesheet" href="/Docs/Header/docstopnav.css">
+    <link rel="stylesheet" href="/Docs/Body/docsbody.css">
+    <link rel="stylesheet" href="/Docs/Body/docssearchbox.css">
+    <link rel="stylesheet" href="/Docs/Body/docssection.css">
+    <link rel="stylesheet" href="/Docs/Footer/sectionfooter.css">
+    <link rel="stylesheet" href="./XR App Installation Guide.css">
+
 </head>
 <header>
     <div class="container-topnav">
         <nav class="d-flex1">
-            <img src="./../../images/logo.svg">
+            <img src="/images/logo.svg">
             <div class="navigation-bar">
                 <ul>
                     <li><a href="./../../Home.html" class="active">Home</a></li>
@@ -64,41 +66,74 @@
     <div class="container-body">
         <div class="d-grid2">
             <div class="col-left">
-                <ul>
-                    <li><h1><a href="./../../Docs.html">DOCS</a></h1>
+                <Caret-down>
+                    <nav class="sidebar">
+                        <h1><a href="/Docs/Docs.html">DOCS</a></h1>
                         <ul>
-                            <li><a href="./../../Docs/Sidebar/LMS.html" class="active">API List v2.0</a></li>
-                            <li><a href="#" class="active">API and Scaling Docs</a></li>
-                            <li><a href="#" class="active">Contributing Guidelines</a></li>
-                            <li><a href="#" class="active">LMS v1.0 Installation and Docs</a></li>
-                            <li><a href="#" class="active">LMS v1.0 User Access Role</a></li>
-                            <li><a href="#" class="active">LMS v2.0 Installation and Docs</a></li>
-                            <li><a href="#" class="active">LMS v2.0 User Access Role</a></li>
-                            <li><a href="#" class="active">WebXR v1.0 App Usage Manual</a></li>
-                            <li><a href="#" class="active">XR App Installation Guide</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="./../../Docs/Sidebar/HowUnity.html" class="active">How To Install Unity</a></li>
-                                    <li><a href="./../../Docs/Sidebar/EnablingVR.html" class="active">Enabling VR 2019.31</a></li>
-                                    <li><a href="./../../Docs/Sidebar/HowVuforia.html" class="active">How to Install Vuforia in your Unity File</a></li>
-                                </ul>
-                           </li>
-                            
-                            <li><a href="./../../Docs/Sidebar/HowVR.html" class="active">XR App Usage Manual</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                              <ul>
-                                <li><a href="./../../Docs/Sidebar/HowVR.html" class="active">How Vr Works</a></li>
-                                <li><a href="./../../Docs/Sidebar/HowAR.html" class="active">How Ar Works</a></li>
-                                <li><a href="./../../Docs/Sidebar/UserManual.html" class="active">Users Manual</a></li>
+                            <a href="/Docs/Docs.html" class="API-L">XR App Installation Guide
+                                <span class="fa fa-caret-down 11"></span>
+                            </a>
+                            <li>
+                            <li><a href="./HowUnity.html">How to Install Unity</a></li>
+                            <li><a href="./EnablingVR.html">Enabling VR 2019.31</a></li>
+                            <li><a href="./HowVuforia.html">How to Install Vuforia in your Unity files</a></li>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
+                    </nav>
+                </Caret-down>
             </div>
 
             <div class="col-right">
-               <!-- for content -->
-                    
-             
+                    <h1>How To Install Unity</h1>
+                    <li>
+                       <h2>Go to Unity’s Download Page <a href="" class="active">"https://store.unity.com/download"</a> and click “Download Unity Hub”</h2>
+                    </li>
+                    <img src="/images1/11.png" alt="11.png" style="width:800px">
+
+                    <li>
+                        <h2>A UnityHubSetup.exe file should be downloaded to your “Downloads” folder</h2>
+                    </li>
+                    <li>
+                        <h2>Open the downloaded installer</h2>
+                    </li>
+                    <li>
+                        <h2>Accept the license and terms and click “I Agree” and select a “Destination Folder” and click “Install”.</h2>
+                    </li>
+                    <img src="/images1/12.png" alt="12.png" style="width:700px">
+
+                    <li>
+                        <h2>Once Installed. You can open Unity Hub and Install Unity.</h2>
+                    </li>
+                    <img src="/images1/13.png" alt="13.png" style="width:750px">
+
+                    <li>
+                        <h2>Navigate the Installs tab, in the left side.</h2>
+                    </li>
+                    <img src="/images1/14.png"  alt="14.png" style="width:300px">
+
+                    <li>
+                        <h2>Click the Add Button.</h2>
+                    </li>
+                    <img src="/images1/15.png"  alt="15.png" style="width:800px">
+
+                    <li>
+                        <h2>Select the version of Unity you want to use.</h2>
+                    </li>
+                    <img src="/images1/16.png"  alt="16.png" style="width:800px">
+
+                    <li>
+                        <h2>Select all the component you want to installed with Unity.</h2>
+                    </li>
+                    <img src="/images1/17.png"  alt="17.png" style="width:600px">
+
+                    <li>
+                        <h2>Agree with the Visual Studio Community License and Unity will begin to Install. The installation process will take awhile.</h2>
+                    </li>
+                    <img src="/images1/18.png"  alt="18.png" style="width:800px">
+
+
+
+                 
             </div>         
         </div>
     </div> 
@@ -111,7 +146,7 @@
         <div class="service-item d-flex3">
             <div class="item">
                 <div class="footer-left">
-                    <img src="./../../images/logo.svg">
+            <img src="/images/logo.svg">
                 </div>
             </div>
             <div class="item">

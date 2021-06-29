@@ -6,16 +6,18 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-    <link rel="stylesheet" href="./../Header/docstopnav.css">
-    <link rel="stylesheet" href="/Home/Footer/sectionfooter.css">
-    <link rel="stylesheet" href="./../Body/docsbody1.css">
-    <link rel="stylesheet" href="./../Body/docssearchbox.css">
-    <link rel="stylesheet" href="./../Body/docssection.css">
+    <link rel="stylesheet" href="/Docs/Header/docstopnav.css">
+    <link rel="stylesheet" href="/Docs/Body/docsbody.css">
+    <link rel="stylesheet" href="/Docs/Body/docssearchbox.css">
+    <link rel="stylesheet" href="/Docs/Body/docssection.css">
+    <link rel="stylesheet" href="/Docs/Footer/sectionfooter.css">
+    <link rel="stylesheet" href="./Endpoints-caret-down.css">
+
 </head>
 <header>
     <div class="container-topnav">
         <nav class="d-flex1">
-            <img src="./../../images/logo.svg">
+            <img src="/images/logo.svg">
             <div class="navigation-bar">
                 <ul>
                     <li><a href="./../../Home.html" class="active">Home</a></li>
@@ -64,133 +66,23 @@
     <div class="container-body">
         <div class="d-grid2">
             <div class="col-left">
-                <ul>
-                    <li><h1><a href="./../../Docs.html">DOCS</a></h1>
+                <Caret-down>
+                    <nav class="sidebar">
+                        <h1><a href="/Docs/Docs.html">DOCS</a></h1>
                         <ul>
-                            <li><a href="#" class="active">API List v2.0</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="./../../Docs/Sidebar/APIList-Topic.html" class="active">Topic</a></li>
-                                    <li><a href="./../../Docs/Sidebar/APIList-AddTop.html" class="active">Add Topic</a></li>
-                                    <li><a href="./../../Docs/Sidebar/APIList-EditTop.html" class="active">Edit Topic</a></li>
-                                    <li><a href="./../../Docs/Sidebar/APIList-DelTop.html" class="active">Delete Topic</a></li>
-                                    <li><a href="./../../Docs/Sidebar/APIList-Subj.html" class="active">Subject</a></li>
-                                    <li><a href="./../../Docs/Sidebar/APIList-AddSubj.html" class="active">Add Subject</a></li>
-                                    <li><a href="./../../Docs/Sidebar/APIList-EditSubj.html" class="active">Edit Subject</a></li>
-                                    <li><a href="./../../Docs/Sidebar/APIList-DelSubj.html" class="active">Delete Subject</a></li>
-                                </ul>
-
-
-                            <li><a href="#" class="active">API and Scaling Docs</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="#" class="active">End Points</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                 <ul>
-                                    <li><a href="./../../Docs/Sidebar/End-Add.html" class="active">Add Points</a></li>
-                                    <li><a href="./../../Docs/Sidebar/End-Edit.html" class="active">Edit-Student</a></li>
-                                    <li><a href="./../../Docs/Sidebar/End-Get.html" class="active">Get-Student</a></li>
-                                    <li><a href="./../../Docs/Sidebar/End-Gets.html" class="active">Get-Students</a></li>
-                                    <li><a href="./../../Docs/Sidebar/End-Lead.html" class="active">Leaderboard</a></li>
-                                 </ul>
-                                    <li><a href="./../../Docs/Sidebar/APIDocs.html" class="active">API Scaling Docs</a></li>
-                                </ul>
-
-                            <li><a href="#" class="active">Contributing Guidelines</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="./../../Docs/Sidebar/Contributing-Guidelines.html" class="active">Contributing Guidelines</a></li>
-                                </ul>
-                                
-
-                            <li><a href="#" class="active">LMS v1.0 Installation and Docs</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="#" class="active">Entity-Relationship-Diagram</a></li>
-                                    <li><a href="#" class="active">Installation</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                    <ul>
-                                        <li><a href="#" class="active">Linux</a></li>
-                                        <li><a href="#" class="active">MacOS</a></li>
-                                        <li><a href="#" class="active">Windows</a></li>
-                                        <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                            <ul>
-                                                <li><a href="#" class="active">Configure-the-LMS</a></li>
-                                                <li><a href="#" class="active">Install-Git</a></li>
-                                                <li><a href="#" class="active">Install-XAMPP</a></li>
-                                                <li><a href="#" class="active">Obtain-StockKnowledge-Repo</a></li>
-                                                <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                                    <ul>
-                                                        <li><a href="#" class="active">Obtain the LMS</a></li>
-                                                    </ul>
-                                                <li><a href="#" class="active">Requirement</a></li>
-                                                <li><a href="#" class="active">Setup-the-Database</a></li>
-                                            </ul>
-                                        <li><a href="#" class="active">Installation</a></li>
-                                    </ul>
-                                    <li><a href="#" class="active">Navigating-the-Codebase</a></li>
-                                    <li><a href="#" class="active">LMS Installation and Docs</a></li>
-                                </ul>
-
-
-                            <li><a href="#" class="active">LMS v1.0 User Access Role</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="#" class="active">v1.0</a></li>
-                                </ul>
-
-
-                            <li><a href="#" class="active">LMS v2.0 Installation and Docs</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="#" class="active">Set-up a local copy</a></li>
-                                </ul>
-
-
-                            <li><a href="#" class="active">LMS v2.0 User Access Role</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="#" class="active">Comming Soon</a></li>
-                                </ul>
-
-
-                            <li><a href="#" class="active">WebXR v1.0 App Usage Manual</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="#" class="active">Mobile-App</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                        <ul>
-                                            <li><a href="#" class="active">Gain-Points</a></li>
-                                            <li><a href="#" class="active">Installation</a></li>
-                                            <li><a href="#" class="active">Quick-Start</a></li>
-                                            <li><a href="#" class="active">Mobile-App</a></li>
-                                        </ul>
-                                    <li><a href="#" class="active">VR-Headset</a></li>
-                                    <li><a href="#" class="active">App Usage Manual</a></li>
-                                </ul>
-
-
-                            <li><a href="#" class="active">XR App Installation Guide</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="./../../Docs/Sidebar/HowUnity.html" class="active">How To Install Unity</a></li>
-                                    <li><a href="./../../Docs/Sidebar/EnablingVR.html" class="active">Enabling VR 2019.31</a></li>
-                                    <li><a href="./../../Docs/Sidebar/HowVuforia.html" class="active">How to Install Vuforia in your Unity File</a></li>
-                                </ul>
-                           </li>
-                            
-                            <li><a href="./../../Docs/Sidebar/HowVR.html" class="active">XR App Usage Manual</a></li>
-                            <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                              <ul>
-                                <li><a href="./../../Docs/Sidebar/HowVR.html" class="active">How Vr Works</a></li>
-                                <li><a href="./../../Docs/Sidebar/HowAR.html" class="active">How Ar Works</a></li>
-                                <li><a href="./../../Docs/Sidebar/UserManual.html" class="active">Users Manual</a></li>
-                            </ul>
+                            <a href="/Docs/Docs.html" class="API-L">Endpoints
+                                <span class="fa fa-caret-down 11"></span>
+                            </a>
+                            <li>
+                            <li><a href="./End-Add.html">Add-Point</a></li>
+                            <li><a href="./End-Edit.html">Edit-Student</a></li>
+                            <li><a href="./End-Get.html">Get-Student</a></li>
+                            <li><a href="./End-Gets.html">Get-Students</a></li>
+                            <li><a href="./End-Lead.html">Leaderboard</a></li>
                             </li>
-
                         </ul>
-                    </li>
-                </ul>
+                    </nav>
+                </Caret-down>
             </div>
 
             <div class="col-right">
@@ -322,7 +214,7 @@
         <div class="service-item d-flex3">
             <div class="item">
                 <div class="footer-left">
-                    <img src="./../../images/logo.svg">
+            <img src="/images/logo.svg">
                 </div>
             </div>
             <div class="item">

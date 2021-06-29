@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="/Docs/Body/docssearchbox.css">
     <link rel="stylesheet" href="/Docs/Body/docssection.css">
     <link rel="stylesheet" href="/Docs/Footer/sectionfooter.css">
-    <link rel="stylesheet" href="./XR App Usage Manual.css">
-    
+    <link rel="stylesheet" href="./XR App Installation Guide.css">
+
+
 </head>
 <header>
     <div class="container-topnav">
@@ -20,7 +21,7 @@
             <img src="/images/logo.svg">
             <div class="navigation-bar">
                 <ul>
-                    <li><a href="./../../../Home.html" class="active">Home</a></li>
+                    <li><a href="./../../Home.html" class="active">Home</a></li>
                     <li><a href="./../../Docs.html">Docs</a></li>
                     <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul>
@@ -70,14 +71,13 @@
                     <nav class="sidebar">
                         <h1><a href="/Docs/Docs.html">DOCS</a></h1>
                         <ul>
-                            <a href="/Docs/Docs.html" class="API-L">XR App Usage Manual
+                            <a href="/Docs/Docs.html" class="API-L">XR App Installation Guide
                                 <span class="fa fa-caret-down 11"></span>
                             </a>
-                
                             <li>
-                            <li><a href="./HowVR.html" class="active">How Vr Works</a></li>
-                            <li><a href="./HowAR.html" class="active">How Ar Works</a></li>
-                            <li><a href="./UserManual.html" class="active">Users Manual</a></li>
+                                <li><a href="./HowUnity.html">How to Install Unity</a></li>
+                                <li><a href="./EnablingVR.html">Enabling VR 2019.31</a></li>
+                                <li><a href="./HowVuforia.html">How to Install Vuforia in your Unity files</a></li>
                             </li>
                         </ul>
                     </nav>
@@ -85,9 +85,62 @@
             </div>
 
             <div class="col-right">
-                    <h1>How Vr Works</h1>
-                    <img src="./../../../images/vr1.png">
-                    <h3>Click Here</h3> <a href="https://www.youtube.com/watch?v=77zXVXWR4pU">www.youtube.com/watch?v=77zXVXWR4pU</a>
+                    <h1>Enabling VR 2019.31</h1>
+                    <p> 1. Launching the Package Manager Window</p> <br>
+                    <img src="/images1/20.png" alt="20.png" style="width:650px">
+                    <p> To develop VR experiences, you’ll need to install the VR SDK for your target OS and VR platform. The VR SDKs are installed via the Package Manager. (You can access the Package Manager Console from Visual Studio by going to Tools →</p> <br><br>
+                    <p>Library Package Manager -->Package Manager Console)</p><br>
+                    <img src="/images1/21.png" alt="21.png" style="width:250px">
+
+                    <li>
+                        <h2>a. Select the Package Manager from the “Window” drop down.</h2>
+                    </li>
+                    <li>
+                        <h2>b. Once you click the “Package Manager” all packages will appear and you need to select “Open VR Desktop”. Click to install.</h2>
+                    </li>
+                    <img src="/images1/22.png" alt="22.png" style="width:550px">
+
+                    <li>
+                        <h2>c. Other supported platforms includes:</h2>
+                    </li>
+                         <p>   I.  Android (Google VR Android, Oculus Android)</p> <br>
+                         <p>   II. Desktop (Oculus Desktop, OpenVr (Desktop)</p> <br>
+                         <p>   III. iOS (Google VR iOS)</p> <br><br>
+
+                         <p> 2. Enabling VR support in project setting</p> <br><br>
+
+
+                 <div class="col-right1">
+                    <p> - Upon installing the VR SDK we are now ready to enable VR.</p>
+                 </div>
+
+                 <p>a. Select “Project Settings” from the “Edit” drop down.</p> <br><br>
+                 <img src="/images1/23.png" alt="23.png" style="width:200px">
+
+                 <p>b. Once “Project Settings” open click “Player”.</p> <br><br>
+                 <img src="/images1/24.png" alt="24.png" style="width:650px">
+
+                 <p>c. At the bottom part of the “Player Window” click the XR Settings to expand the section. You will see a <br>box, then marked the “Virtual Reality Supported”.</p> <br><br>
+                 <img src="/images1/25.png" alt="25.png" style="width:650px">
+
+                 <div class="col-right1">
+                    <p> - i. Note: Enabling Virtual Reality Support is the same across all currently supported platforms.</p>
+                 </div>
+
+                <p> d. Once “Virtual Reality Supported” is enabled you will need to add at least one VR SDK. Click the “+” sign and select “Open VR” if it is not already added. But if once clicked and the “Open VR” is already there, no need to click the “+” sign.</p><br><br>
+                <img src="/images1/26.png" alt="26.png" style="width:650px">
+
+                <p> e. Close the “Player Settings” window.</p> <br><br>
+
+                <p> 3. Conclusion</p> <br><br>
+                <div class="col-right1">
+                    <p> - Your Unity Project is now configured for VR development.</p>
+                 </div>
+
+
+
+                   
+
             </div>         
         </div>
     </div> 

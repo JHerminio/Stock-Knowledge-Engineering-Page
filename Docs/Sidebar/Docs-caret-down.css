@@ -34,19 +34,6 @@
 nav ul{
   background: white;
   list-style: none;
-  padding-left: 2em;
-}
-
-nav ul a{
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  text-decoration: none;
-  display: block;
-  position: relative;
-  color: #333333;
-  border-left: 2px solid transparent;
 }
 nav ul li{
   padding-bottom: .5em;
@@ -61,12 +48,13 @@ nav ul li a{
   position: relative;
   color: #333333;
   border-left: 2px solid transparent;
-  padding-left: 2em;
+  padding-left: 2.3em;
   margin-bottom: .5em;
 }
-nav ul a:hover{
+nav ul li a:hover{
   color:deepskyblue;
   background: white;
+
 }
 nav ul ul{
   position: static;
@@ -83,14 +71,50 @@ nav ul ul li a:hover{
   color:deepskyblue!important;
   background: white!important;
 }
-nav ul a span{
+nav ul li a span{
   position: absolute;
-  top: 25%;
+  top: 50%;
   right: 20px;
   transform: translateY(-50%);
   transition: transform 0.4s;
   font-size: 14px;
 }
-nav ul a span.rotate{
+nav ul li a span.rotate{
   transform: translateY(-50%) rotate(-180deg);
+}
+/*Docs*/
+nav ul .API-L.show{
+  display: block;
+}
+nav ul .API-S-D.show{
+  display: block;
+}
+nav ul .C-G.show{
+  display: block;
+}
+nav ul .LMSv1-I-D.show{
+  display: block;
+}
+nav ul .LMS-U-A-R.show{
+  display: block;
+}
+nav ul .LMSv2-I-D.show{
+  display: block;
+}
+nav ul .LMSv2-U-A-R.show{
+  display: block;
+}
+nav ul .WebXR.show{
+  display: block;
+}
+nav ul .XR-A-I-G.show{
+  display: block;
+}
+nav ul .XR-A-U-M.show{
+  display: block;
+}
+
+/*Endpoint*/
+nav ul .EP1.show{
+  display: block;
 }
