@@ -2,6 +2,10 @@
 
 This website is built using [Visual Studio Code](https://code.visualstudio.com/), is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
+## Local Website
+
+[https://jherminio.github.io/Stock-Knowledge-Engineering-page-update/Home.html]
+
 ### Installation
 
 ```console
