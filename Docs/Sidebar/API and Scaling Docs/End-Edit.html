@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="/Docs/Header/docstopnav.css">
     <link rel="stylesheet" href="/Docs/Body/docsbody.css">
+    <link rel="stylesheet" href="/Docs/Body/docsbody1.css">
     <link rel="stylesheet" href="/Docs/Body/docssearchbox.css">
     <link rel="stylesheet" href="/Docs/Body/docssection.css">
     <link rel="stylesheet" href="/Docs/Footer/sectionfooter.css">
-    <link rel="stylesheet" href="./Contributing_Guidelines.css">    
+    <link rel="stylesheet" href="./Endpoints-caret-down.css">
+
 </head>
 <header>
     <div class="container-topnav">
@@ -19,8 +21,8 @@
             <img src="/images/logo.svg">
             <div class="navigation-bar">
                 <ul>
-                    <li><a href="/Home.html" class="active">Home</a></li>
-                    <li><a href="/Docs/Docs.html">Docs</a></li>
+                    <li><a href="./../../Home.html" class="active">Home</a></li>
+                    <li><a href="./../../Docs.html">Docs</a></li>
                     <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul>
                             <li><a href="#" class="active">API List v2.0</a></li>
@@ -61,33 +63,147 @@
     </div>
 </section>
 
-
 <body>
     <div class="container-body">
         <div class="d-grid2">
             <div class="col-left">
-
                 <Caret-down>
                     <nav class="sidebar">
                         <h1><a href="/Docs/Docs.html">DOCS</a></h1>
                         <ul>
-                                <a href="/Docs/Docs.html" class="API-L">Contributing Guidelines
-                                    <span class="fa fa-caret-down"></span>
-                                </a>
+                            <a href="/Docs/Docs.html" class="API-L">API and Scaling Docs
+                                <span class="fa fa-caret-down 11"></span></a>
+                
                             <div class="caretdown">
-                                <a href="./Contributing_Guidelines.html" class="API-L">Contributing Guidelines
+                                <a href="./End-Add.html" class="API-L">Endpoints
                                     <span class="fa fa-caret-down 11"></span></a>
+                            </div>
+                
+                            <div class="caret-list">
+                                <li><a href="./End-Add.html">Add-Point</a></li>
+                                <li><a href="./End-Edit.html">Edit-Student</a></li>
+                                <li><a href="./End-Get.html">Get-Student</a></li>
+                                <li><a href="./End-Gets.html">Get-Students</a></li>
+                                <li><a href="./End-Lead.html">Leaderboard</a></li>
                             </div>
                         </ul>
                     </nav>
                 </Caret-down>
-                
             </div>
 
             <div class="col-right">
-                <h1>Contributing Guidelines<h1>
-
+                <h1>Edit Student</h1><br>
+                <h2>Description</h2>
+                <p>Edit student record.</p><br>
+                <h2>Method</h2>
             
+                <div class="col-right1">
+                    <p>POST</p>
+                        </div>
+                
+               <br><h2>Endpoint</h2>
+            
+               <div class="col-right2">
+                <p>/admin/api.php?f=editStudent&id={student id}</p>
+                    </div>
+                
+               <h2>Header</h2>
+               <div class="col-right2">
+                <p>Content-Type: multipart/form-data</p>
+                    </div>
+
+               <h2>Body</h2><br>
+               <h4>Form Data</h4>
+
+               <p>{{< notice note >}} At lease one key-value pair is present. {{< /notice >}}</p> <br>
+                    
+               <table>
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>username</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>mobile</td>
+                    <td>Integer</td>
+                </tr>
+                <tr>
+                    <td>first_name</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>last_name</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>grade_level</td>
+                    <td>Integer</td>
+                </tr>
+                <tr>
+                    <td>school_name</td>
+                    <td>Integer</td>
+                </tr>
+                <tr>
+                    <td>preference</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>progress</td>
+                    <td>Integer</td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td>blob</td>
+                </tr>
+            </table>
+
+
+
+
+                <h2>Response</h2>
+                <h4>Success</h4>
+                <div class="col-right4">
+                    <p>{</p>
+                    <h5>result:"success"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String</h5>
+                    <p>{</p>
+                        </div>
+
+                <br> <h4>Fail</h4>
+                <div class="col-right4">
+                    <p>{</p>
+                    <h5>result:"fail"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String</h5>
+                    <p>{</p>
+                        </div>
+
+                    <br><br><h2>Example</h2>
+
+                    <h4>Javascript</h4>
+                    <h4>POST Request</h4>
+
+                    <div class="col-right3">
+                        <h5>const editStudent = async () => {</h5>
+                            <h6>const response = await fetch('http://stockknowledge.org/admin/api.php?f=editStudent&id=2',{</h6>
+                            <p>method: 'POST',</p>
+                            <p>body: formData,</p>
+                            <p> headers: {</p>
+                            <h7> 'Content-Type': 'multipart/form-data'</h7>
+                            <p>}</p>
+                            <h6> });</h6>
+                            <h6> return await response.json();</h6>
+                            <h5>}</h5>
+                           </div>
+                       
     
 
                     
@@ -104,7 +220,7 @@
         <div class="service-item d-flex3">
             <div class="item">
                 <div class="footer-left">
-                    <img src="/images/logo.svg">
+            <img src="/images/logo.svg">
                 </div>
             </div>
             <div class="item">

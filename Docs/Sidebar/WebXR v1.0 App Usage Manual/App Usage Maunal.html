@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <link rel="stylesheet" href="/Docs/Header/docstopnav.css">
-    <link rel="stylesheet" href="/Docs/Body/docsbody1.css">
+    <link rel="stylesheet" href="/Docs/Body/docsbody.css">
     <link rel="stylesheet" href="/Docs/Body/docssearchbox.css">
     <link rel="stylesheet" href="/Docs/Body/docssection.css">
     <link rel="stylesheet" href="/Docs/Footer/sectionfooter.css">
-    <link rel="stylesheet" href="./Endpoints-caret-down.css">
+    <link rel="stylesheet" href="./WebXR v1.0 App Usage Manual.css">
 
 </head>
 <header>
@@ -70,20 +70,13 @@
                     <nav class="sidebar">
                         <h1><a href="/Docs/Docs.html">DOCS</a></h1>
                         <ul>
-                            <a href="/Docs/Docs.html" class="API-L">API and Scaling Docs
-                                <span class="fa fa-caret-down 11"></span></a>
-                
+                            <a href="/Docs/Docs.html" class="API-L">WebXR v1.0 App Usage Manual
+                                <span class="fa fa-caret-down 11"></span>
+                            </a>
                             <div class="caretdown">
-                                <a href="./End-Add.html" class="API-L">Endpoints
-                                    <span class="fa fa-caret-down 11"></span></a>
-                            </div>
-                
-                            <div class="caret-list">
-                                <li><a href="./End-Add.html">Add-Point</a></li>
-                                <li><a href="./End-Edit.html">Edit-Student</a></li>
-                                <li><a href="./End-Get.html">Get-Student</a></li>
-                                <li><a href="./End-Gets.html">Get-Students</a></li>
-                                <li><a href="./End-Lead.html">Leaderboard</a></li>
+                                <li><a href="./Mobile-App.html">Mobile App</a></li>
+                                <li><a href="./VR Headset.html">VR Headset</a></li>
+                                <li><a href="./App Usage Maunal.html">App Usage Manual</a></li>
                             </div>
                         </ul>
                     </nav>
@@ -91,84 +84,8 @@
             </div>
 
             <div class="col-right">
-                <h1>Get Student</h1><br>
-                <h2>Description</h2>
-                <p>Return student record</p><br>
-                <h2>Method</h2>
-            
-                <div class="col-right1">
-                    <p>Get</p>
-                        </div>
-                
-               <br><h2>Endpoint</h2>
-            
-               <div class="col-right2">
-                <p>/admin/api.php?f=getStudent&id={student id}</p>
-                    </div>
-                
-               <h2>Header</h2>
-               <div class="col-right2">
-                <p>Content-Type: application/x-www-form-urlencoded</p>
-                    </div>
-
-               <h2>Body</h2><br>
-               <div class="col-right2">
-                <p>Not Applicable</p>
-                    </div>
-
-                <h2>Response</h2>
-                <h4>Success</h4>
-               
-                <div class="col-right3">
-                    <h5>{</h5>
-                        <h5>result: "success", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //string</h5>
-                        <h5>content: {</h5>
-                        <p>userid: int,</p>
-                        <p>username: string,,</p>
-                        <p>email: string,,</p>
-                        <p>mobile: int,</p>
-                        <p>firstname: string,</p>
-                        <p>lastname: string,</p>
-                        <p>gradelevel: int,</p>
-                        <p>schoolname: string,</p>
-                        <p>preferences: string,</p>
-                        <p>points: int</p>
-                        <p>}</p>
-                        <h5>}</h5>
-                       </div>
-
-                <br> <h4>Fail</h4>
-                <div class="col-right4">
-                    <p>{</p>
-                    <h5>result:"fail"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String</h5>
-                    <p>{</p>
-                        </div>
-
-                    <br><br><h2>Example</h2>
-
-                    <h4>Javascript</h4>
-                    <h4>POST Request</h4>
-
-                    <div class="col-right6">
-                        <h5>const students = async () => {</h5>
-                            <h6> const response = await fetch('http://stockknowledge.org/admin/api.php?f=getStudent&id=2',{</h6>
-                            <h6>return await response.json();</h6>
-                            <p>method: 'POST',</p>
-                            <p>body: 'id=4',</p>
-                            <p>headers: {</p>
-                            <h7> 'Content-Type': 'application/x-www-form-urlencoded'</h7>
-                            <p>}</p>
-                            <h6>});</h6>
-                            <h6> return await response.json();</h6>
-                            <h5>}</h5>
-                    </div>
-
-                    <div><br><br></div>
-                       
-    
-
+                    <h1>App Usage Manual</h1><br>
                     
-                
             </div>         
         </div>
     </div> 
@@ -204,21 +121,4 @@
         </div>
     </div>
 </section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    $('.burger').on('click', function (event) {
-        $('.navigation-bar').slideToggle('200');
-    })
-    $(document).ready(function () {
-        $(window).bind('scroll', function () {
-            var navHeight = $('header').height();
-            if ($(window).scrollTop() > navHeight) {
-                $('header').addClass('fixed');
-            }
-            else {
-                $('header').removeClass('fixed');
-            }
-        })
-    })
-</script>
+</html>

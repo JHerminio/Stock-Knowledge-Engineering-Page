@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="/Docs/Header/docstopnav.css">
     <link rel="stylesheet" href="/Docs/Body/docsbody.css">
+    <link rel="stylesheet" href="/Docs/Body/docsbody1.css">
     <link rel="stylesheet" href="/Docs/Body/docssearchbox.css">
     <link rel="stylesheet" href="/Docs/Body/docssection.css">
     <link rel="stylesheet" href="/Docs/Footer/sectionfooter.css">
-    
+    <link rel="stylesheet" href="./Endpoints-caret-down.css">
+
 </head>
 <header>
     <div class="container-topnav">
@@ -19,8 +21,8 @@
             <img src="/images/logo.svg">
             <div class="navigation-bar">
                 <ul>
-                    <li><a href="/Home.html" class="active">Home</a></li>
-                    <li><a href="/Docs/Docs.html">Docs</a></li>
+                    <li><a href="./../../Home.html" class="active">Home</a></li>
+                    <li><a href="./../../Docs.html">Docs</a></li>
                     <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul>
                             <li><a href="#" class="active">API List v2.0</a></li>
@@ -65,87 +67,109 @@
     <div class="container-body">
         <div class="d-grid2">
             <div class="col-left">
-
                 <Caret-down>
                     <nav class="sidebar">
                         <h1><a href="/Docs/Docs.html">DOCS</a></h1>
                         <ul>
-                                <a href="/Docs/Docs.html" class="LMS-U-A-R">LMS v1.0 User Acces Role
-                                    <span class="fa fa-caret-down 5"></span>
-                                </a>
-                            <li>
-                                <li><a href="/Docs/Sidebar/LMS v2.0 Installation and Docs.html/LMS_v2.0-List1-Installation and Docs.html">Set up local copy</a></li>
-                        
-                            </li>
+                            <a href="/Docs/Docs.html" class="API-L">API and Scaling Docs
+                                <span class="fa fa-caret-down 11"></span></a>
+                
+                            <div class="caretdown">
+                                <a href="./End-Add.html" class="API-L">Endpoints
+                                    <span class="fa fa-caret-down 11"></span></a>
+                            </div>
+                
+                            <div class="caret-list">
+                                <li><a href="./End-Add.html">Add-Point</a></li>
+                                <li><a href="./End-Edit.html">Edit-Student</a></li>
+                                <li><a href="./End-Get.html">Get-Student</a></li>
+                                <li><a href="./End-Gets.html">Get-Students</a></li>
+                                <li><a href="./End-Lead.html">Leaderboard</a></li>
+                            </div>
                         </ul>
                     </nav>
                 </Caret-down>
-                
             </div>
 
             <div class="col-right">
-                <h1>Set-up a local copy</h1> <br>
-
-                <h2>Install NodeJS First</h2>
-
-                <p>Head over to <a href="https://nodejs.org/en/">NodeJS official website</a></p> <br> <br>
-
-                <h2>Clone this repo.</h2>
-
-                <p>If you are running macOS or Ubuntu, you can clone this repository by opening terminal and run</p><br>
-
+                <h1>Get Student</h1><br>
+                <h2>Description</h2>
+                <p>Return student record</p><br>
+                <h2>Method</h2>
+            
+                <div class="col-right1">
+                    <p>Get</p>
+                        </div>
                 
-                <div class="col-right1">
-                    <p> git clone https://github.com/Stock-Knowledge-Engineering/SK-LMS-v2.0.git </p>
-                 </div>
-                 
-                 <p>and if your on windows, open command prompt and run</p> <br>
+               <br><h2>Endpoint</h2>
+            
+               <div class="col-right2">
+                <p>/admin/api.php?f=getStudent&id={student id}</p>
+                    </div>
+                
+               <h2>Header</h2>
+               <div class="col-right2">
+                <p>Content-Type: application/x-www-form-urlencoded</p>
+                    </div>
 
-                   
-                <div class="col-right1">
-                    <p>git clone https://github.com/Stock-Knowledge-Engineering/SK-LMS-v2.0.git </p>
-                 </div>
+               <h2>Body</h2><br>
+               <div class="col-right2">
+                <p>Not Applicable</p>
+                    </div>
 
-                <br><h2>Change directory!!</h2>
+                <h2>Response</h2>
+                <h4>Success</h4>
+               
+                <div class="col-right3">
+                    <h5>{</h5>
+                        <h5>result: "success", &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //string</h5>
+                        <h5>content: {</h5>
+                        <p>userid: int,</p>
+                        <p>username: string,,</p>
+                        <p>email: string,,</p>
+                        <p>mobile: int,</p>
+                        <p>firstname: string,</p>
+                        <p>lastname: string,</p>
+                        <p>gradelevel: int,</p>
+                        <p>schoolname: string,</p>
+                        <p>preferences: string,</p>
+                        <p>points: int</p>
+                        <p>}</p>
+                        <h5>}</h5>
+                       </div>
 
-                <p>Don't forget to change directory to the cloned repository. MacOS/Linus, use terminal and command prompt for windows.</p> <br>
+                <br> <h4>Fail</h4>
+                <div class="col-right4">
+                    <p>{</p>
+                    <h5>result:"fail"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String</h5>
+                    <p>{</p>
+                        </div>
 
-                <div class="col-right1">
-                    <p>cd /to/cloned/repo     </p>
-                 </div>
+                    <br><br><h2>Example</h2>
+
+                    <h4>Javascript</h4>
+                    <h4>POST Request</h4>
+
+                    <div class="col-right6">
+                        <h5>const students = async () => {</h5>
+                            <h6> const response = await fetch('http://stockknowledge.org/admin/api.php?f=getStudent&id=2',{</h6>
+                            <h6>return await response.json();</h6>
+                            <p>method: 'POST',</p>
+                            <p>body: 'id=4',</p>
+                            <p>headers: {</p>
+                            <h7> 'Content-Type': 'application/x-www-form-urlencoded'</h7>
+                            <p>}</p>
+                            <h6>});</h6>
+                            <h6> return await response.json();</h6>
+                            <h5>}</h5>
+                    </div>
+
+                    <div><br><br></div>
+                       
+    
+
                     
-                 <br><h2>Install depedencies..</h2>
-
-                 <p>For this project, I am using NextJS a ReactJS framework, TailwindCSS, Redux, and Socket.IO.</p><br>
-                 <p>Again, for MacOS and Linux user use your terminal and for Windows user use your command prompt, then run.</p> <br>
-
-                 <div class="col-right1">
-                    <p>npm install     </p>
-                 </div>
                 
-                 <br><h2>Run your local development server</h2>
-
-                 <p>You want to test a development build or contribute to the project. Try opening your terminal if your on MacOS/Linux and Command Prompt for Windows then run</p> <br><br><br>
-
-                 <div class="col-right1">
-                    <p>npm run dev     </p>
-                 </div>
-
-                 <br><h2>Ready for deployment?</h2>
-
-                 <p>You want to deploy it, right? Ok, you need to build the project first. Run this command and wait until it finnish to compile</p> <br>
-
-                 <div class="col-right1">
-                    <p>npm run build     </p>
-                 </div>
-
-                 <p>Now, it is now ready for deployment, so hit</p> <br>
-
-                 <div class="col-right1">
-                    <p>npm run start    </p>
-                 </div>
-
-                 <div><br><br></div>
             </div>         
         </div>
     </div> 
@@ -158,7 +182,7 @@
         <div class="service-item d-flex3">
             <div class="item">
                 <div class="footer-left">
-                    <img src="/images/logo.svg">
+            <img src="/images/logo.svg">
                 </div>
             </div>
             <div class="item">

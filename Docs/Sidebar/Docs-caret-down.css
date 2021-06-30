@@ -14,7 +14,7 @@
   transition: left 0.4s ease;
 }
 .sidebar h1{
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   margin-top: 1em;
   list-style: none;
   text-decoration: none;
@@ -37,7 +37,7 @@ nav ul{
 }
 
 nav ul li{
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 nav ul li a{
   font-family: Avenir;
@@ -112,10 +112,5 @@ nav ul .XR-A-I-G.show{
   display: block;
 }
 nav ul .XR-A-U-M.show{
-  display: block;
-}
-
-/*Endpoint*/
-nav ul .EP1.show{
   display: block;
 }
