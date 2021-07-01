@@ -146,7 +146,7 @@
 }
 .col-right ul ul li {
   text-decoration: none;
-  margin-top: .8em;
+  margin-top: 0.8em;
   margin-left: 20px;
   list-style: inside;
 }
@@ -215,7 +215,6 @@ th {
   width: 85%;
   background: #ffffff;
   box-sizing: border-box;
-  overflow-y: scroll;
   margin-left: 20px;
 }
 
