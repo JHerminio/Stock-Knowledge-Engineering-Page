@@ -91,12 +91,12 @@
                                 </div> 
 
                                 <div class="caretdown2">
-                                            <li><a href="./../Windows/ConfigLMS.html">Configure the LMS</a></li>
-                                            <li><a href="./../Windows/InstallGit.html">Install Git</a></li>
-                                            <li><a href="./../Windows/InstallXAMPP.html">Install XAMPP</a></li>
-                                            <li><a href="./../Windows/ObtainSKRepo.html">Obtain Stock Knowledge Repo</a></li>
-                                            <li><a href="./../Windows/Requirements.html">Requirements</a></li>
-                                            <li><a href="./../Installation.html">Setup the Database</a></li>
+                                            <li><a href="../Windows/ConfigLMS.html">Configure the LMS</a></li>
+                                            <li><a href="../Windows/InstallGit.html">Install Git</a></li>
+                                            <li><a href="../Windows/InstallXAMPP.html">Install XAMPP</a></li>
+                                            <li><a href="../Windows/ObtainSKRepo.html">Obtain Stock Knowledge Repo</a></li>
+                                            <li><a href="../Windows/Requirements.html">Requirements</a></li>
+                                            <li><a href="../Windows/SetupDb.html">Setup the Database</a></li>
                                 </div>
                                     
                                     
@@ -109,12 +109,28 @@
             </div>
 
             <div class="col-right">
-                <h1>Installation<h1>
+                <h1>Configure the LMS<h1>
+                <p>1. Navigate to admin folder under Stock Knowledge LMS Folder</p><br>
 
-            
+            <div class="col-right2">
+                <p>X:\xampp\htdocs\aws\admin</p>
+            </div>
+
+                <p>2. Open _conf.dba.inc.php</p><br>
+                <p>3. Change database to your created databasep</p><br>
+
+            <div class="col-right2">
+                <p>\$dba->database = "YOUR DATABASE NAME";</p>
+            </div>
+
+                <p>4. Change home_url to your local admin url</p><br>
     
-
-                    
+                
+            <div class="col-right2">
+                <p>\$home_url = 'http://localhost/aws/admin';</p>
+            </div>
+                
+                <p>5. Done.</p>
                 
             </div>         
         </div>
