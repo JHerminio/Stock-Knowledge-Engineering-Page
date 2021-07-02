@@ -13,10 +13,11 @@ head.fixed nav{
     display: -webkit- flex;
     display: -moz- flex;
     display: -ms- flex;
-    display: -o- flex; 
+    display: -o- flex;
+    text-align: center;
     max-width: 1440px;
     width: 1440px;
-    border-radius: 0px;
+    height: 80px;
 }
 .nav img{
     left: 162px;
@@ -76,8 +77,11 @@ head.fixed nav{
     border-radius: 2em 2em;
 }
 .navigation-bar ul li:hover ul{
+    text-align: left;
+    align-items: center;
     display: block;
     transition: all .4s ease-in-out;
+    z-index: 1;
 }
 .navigation-bar ul li ul li a{
     position: relative;
@@ -89,6 +93,7 @@ head.fixed nav{
 }
 .navigation-bar ul li a:hover,
 .navigation-bar ul li a.active a{
+    
     color:deepskyblue;
 }
 .navigation-bar ul li:last-child{
@@ -113,6 +118,7 @@ head.fixed nav{
         width: 100%;
         background-color: #262626;
         padding: 20px 0;
+        z-index: 2;
     }
     .navigation-bar ul{
         align-items: center;
