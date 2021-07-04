@@ -60,7 +60,15 @@
   transform: scale(1.03);
   color: deepskyblue;
 }
-
+.d-flex{
+    display: -webkit- flex;
+    display: -moz- flex;
+    display: -ms- flex;
+    display: -o- flex;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1440px;
+}
 .d-flex2 {
   display: -webkit- flex;
   display: -moz- flex;
