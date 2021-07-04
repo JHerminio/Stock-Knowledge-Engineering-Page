@@ -1,5 +1,8 @@
+# Second documentation page option 
+This documentation page may eventually replace Stock-Knowledge-Engineering.github.io to follow the organization's brand guideline
+
 ## Local Website
-[Stock-Knowledge](https://jherminio.github.io/Stock-Knowledge-Engineering-page.github.io/Home.html) 
+[Stock-Knowledge-Engineering.github.io](https://jherminio.github.io/Stock-Knowledge-Engineering-page.github.io/Home.html) 
 
 
 ## Website
