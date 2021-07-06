@@ -31,12 +31,12 @@
   text-align: left;
   margin-left: 15px;
 }
-nav ul{
+.sidebar ul{
   background: white;
   list-style: none;
   padding-left: 2em;
 }
-nav ul a{
+.sidebar ul a{
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
@@ -47,7 +47,7 @@ nav ul a{
   color: #333333;
   border-left: 2px solid transparent;
 }
-nav ul li{
+.sidebar ul li{
   padding-bottom: .5em;
 }
 .caretdown{
@@ -57,35 +57,35 @@ nav ul li{
 .caretdown li{
   margin-bottom: .5em;
 }
-nav .installation-caretdown li{
+.sidebar .installation-caretdown li{
   padding-left: 1em;
 }
-nav ul a:hover{
+.sidebar ul a:hover{
   color:deepskyblue;
   background: white;
 }
-nav ul ul{
+.sidebar ul ul{
   position: static;
   display: none;
 }
-nav ul ul li{
+.sidebar ul ul li{
   border-top: none;
 }
-nav ul ul li a{  
+.sidebar ul ul li a{  
   color: #333333;
   padding-left: 4em;
 }
-nav ul ul li a:hover{
+.sidebar ul ul li a:hover{
   color:deepskyblue!important;
   background: white!important;
 }
-nav ul a span{
+.sidebar ul a span{
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
   transition: transform 0.4s;
   font-size: 14px;}
-nav ul a span.rotate{
+.sidebar ul a span.rotate{
   transform: translateY(-50%) rotate(-180deg);
 }

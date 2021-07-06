@@ -93,7 +93,6 @@ head.fixed nav{
 }
 .navigation-bar ul li a:hover,
 .navigation-bar ul li a.active a{
-    
     color:deepskyblue;
 }
 .navigation-bar ul li:last-child{
