@@ -23,9 +23,7 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 ```console
 yarn build
-
 ``` 
-
 -->statement for hosting website
 
 ## Deployment
@@ -34,3 +32,7 @@ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `master` branch.
+
+## COPYRIGHTED CONTENTS
+Images, videos, and text contents that are unique to Stock Knowledge are copyrighted. Please ask permission if you wish to use them.
+
