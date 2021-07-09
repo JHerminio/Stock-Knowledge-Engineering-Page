@@ -1,0 +1,23 @@
+{
+  "name": "stock-knowledge-engineering-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d webpage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHerminio/Stock-Knowledge-Engineering-page-update.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://JHerminio.github.io/Stock-Knowledge-Engineering-page.github.io"
+  },
+  "homepage": "https://github.com/JHerminio/Stock-Knowledge-Engineering-page-update#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
