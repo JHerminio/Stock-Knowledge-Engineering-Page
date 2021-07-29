@@ -109,8 +109,10 @@
     color: #616161;
     padding-top: 24px;
     padding-bottom: 30px;
-    float: left;
+    /* float: left; */
     width: 625px;
+    display: grid;
+    
 }
 .col-left1 img{
     float: left;
